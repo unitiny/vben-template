@@ -8,6 +8,7 @@
   },
   "dashboard": {
     "title": "Dashboard",
+    "overview": "Overview",
     "analytics": "Analytics",
     "workspace": "Workspace"
   }
