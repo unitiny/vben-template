@@ -15,9 +15,11 @@ const routes: RouteRecordRaw[] = [
       title: $t('page.dashboard.overview'),
     },
   },
-  // Dashboard 菜单组
+  // Dashboard 菜单组（HR系统不显示，保留路由供内部使用）
   {
     meta: {
+      hideInMenu: true,
+      hideInTab: true,
       icon: 'lucide:layout-dashboard',
       order: -1,
       title: $t('page.dashboard.title'),
@@ -30,6 +32,8 @@ const routes: RouteRecordRaw[] = [
         path: '/analytics',
         component: () => import('#/views/dashboard/analytics/index.vue'),
         meta: {
+          hideInMenu: true,
+          hideInTab: true,
           icon: 'lucide:area-chart',
           title: $t('page.dashboard.analytics'),
         },
@@ -39,6 +43,8 @@ const routes: RouteRecordRaw[] = [
         path: '/workspace',
         component: () => import('#/views/dashboard/workspace/index.vue'),
         meta: {
+          hideInMenu: true,
+          hideInTab: true,
           icon: 'carbon:workspace',
           title: $t('page.dashboard.workspace'),
         },

@@ -11,5 +11,11 @@ export const overridesPreferences = defineOverridesPreferences({
     name: import.meta.env.VITE_APP_TITLE,
     // 登录页布局设置为居中
     authPageLayout: 'panel-center',
+    // 隐藏偏好设置按钮
+    enablePreferences: false,
+  },
+  // 隐藏右上角全局搜索
+  widget: {
+    globalSearch: false,
   },
 });
